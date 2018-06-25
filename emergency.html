@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Emergency Contact</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Steven Castellucci">
+  <meta name="description" content="A bare-bones form to send a message to pre-specified email address">
+  <meta name="robots" content="noindex, nofollow"><!-- Prevents search engines from indexing this page. -->
+</head>
+
+<body>
+
+<h2>Emergency Contact</h2>
+
+<p>To send a message to me, enter text below and click the "Send Message" button.</p>
+<p>If I am unable to phone you, I will update this page with a response. Please check back after 24 hours.</p>
+
+<center>
+<FORM METHOD="POST" ACTION="mail.php">
+<input type=hidden name="email_to" value="recipient@server.com">
+<input type=hidden name="email_from" value="sender@source.com">
+<input type=hidden name="subject" value="Emergency Contact">
+<textarea name="message" rows="10" cols="50"></textarea>
+<br><br>
+<INPUT TYPE="submit" VALUE="Send Message">
+</FORM>
+<center>
+
+</body>
+</html>

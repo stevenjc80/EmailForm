@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Form</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Steven Castellucci">
+  <meta name="description" content="A bare-bones form to send a message to pre-specified email address">
+  <meta name="robots" content="noindex, nofollow"><!-- Prevents search engines from indexing this page. -->
+</head>
+
+<body>
+
+<h2>Contact Form</h2>
+
+<p>To send a message to me, type your email address, subject line, and message below. When complete, click the "Send Message" button.</p>
+
+<FORM METHOD="POST" ACTION="mail.php">
+  <table>
+    <!-- This section is not needed, as the recipient is specified in the script.
+    <tr>
+      <td>To:</td>
+      <td><input type=text name="email_to" value="recipient@server.com"></td>
+    </tr> -->
+    <tr>
+      <td><i>From:</i></td>
+      <td><input type=text size="50" name="email_from"></td>
+    </tr>
+    <tr>
+      <td><i>Subject:</i></td>
+      <td><input type=text size="50" name="subject"></td>
+    </tr>
+    <tr>
+      <td><i>Message:</i></td>
+    </tr>
+  </table>
+  <textarea name="message" rows="20" cols="80"></textarea>
+  <br><br>
+  <INPUT TYPE="submit" VALUE="Send Message">
+</FORM>
+
+</body>
+</html>
